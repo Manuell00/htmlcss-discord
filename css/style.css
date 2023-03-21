@@ -1,0 +1,293 @@
+/* Regole generali */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+}
+
+
+/* Regole header */
+header {
+    background-image: url(../img/header-background.svg);
+    background-size: cover;
+}
+
+
+/* Inserisco le regole per la mia barra di navigazione nell'header */
+nav {
+    background-color:#195eed;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px
+}
+
+#logo {
+    font-size: 20px;
+
+}
+
+.menu {
+    /* Tolgo i pallini con questo comando */
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 400px;
+}
+
+
+ul a {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+
+#nav-button {
+    background-color: white;
+    color: #5865f2;
+    height: 30px;
+    width: auto;
+    padding: 5px 15px;
+    border: solid 1px #5865f2;
+    border-radius: 15px;
+}
+
+
+
+/* Inserisco le regole per il container */
+.container {
+    background-image: url(../img/jumbo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 450px;
+    
+}
+
+.header-img {
+    width: 25%;
+    height: auto;
+    flex-basis: auto;
+    align-self: flex-end;
+}
+
+.header-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#header-title {
+    width: 50%;
+    text-align: center;
+    font-size: 20px;
+}
+
+#header-title h1 {
+    margin-bottom: 30px;
+}
+
+
+/* Inserisco lo stile ai bottoni nell'header */
+.header-button {
+    margin: 20px 5px;
+    height: 40px;
+    width: auto;
+    padding: 5px 15px;
+    border: solid 1px;
+    border-radius: 25px;
+}
+
+#mac {
+    border-color: white;
+    color: black;
+    background-color: white;
+}
+
+#browser {
+    border-color: black;
+    color: white;
+    background-color: black;
+}
+
+/* Inserisco lo stile del main e delle rispettive section */
+.main-container {
+    margin: 50px 0px;
+    padding: 50px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 50px;
+}
+
+.main-container-rev {
+    background-color: #f3f4f5;
+    padding: 100px 0px;
+    margin: 50px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 50px;
+}
+
+.main-img {
+    height: auto;
+    width: 40%;
+}
+
+.main-text {
+    text-align: left;
+    color: black;
+    width: 22%;
+    font-size: 20px;
+}
+
+.main-text h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.main-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Inserisco lo stile per la parte finale del main che è a colonne */
+.main-container-col {
+    background-color:  #f3f4f5;
+    padding: 100px 0px;
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 50px;
+}
+
+.main-img-col {
+    height: auto;
+    width: 80%;
+}
+
+.main-text-col {
+    text-align: center;
+    color: black;
+    width: 80%;
+    font-size: 20px;
+}
+
+.main-text-col h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.main-img-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-button {
+    margin: 40px 5px;
+    height: 50px;
+    width: auto;
+    padding: 5px 15px;
+    border: solid 1px;
+    border-radius: 25px;
+    font-size: 15px;
+}
+
+#mac-main {
+    border-color: #5865f2;
+    color: white;
+    background-color: #5865f2;
+}
+
+/* Inserisco lo stile del footer */
+footer {
+    background-color: #23272a;
+}
+
+.footer-container {
+    padding: 30px 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 30px;
+    justify-content: space-around;
+
+}
+
+.first-bloc-footer {
+    display: flex;
+    row-gap: 10px;
+    flex-direction: column;
+    width: 15%;
+}
+
+.first-bloc-footer span {
+    padding-right: 10px;
+}
+
+.footer-col {
+    width: 10%;
+}
+
+.footer-col ul {
+    list-style-type: none;
+    line-height: 35px;
+    font-size: 15px;
+
+}
+
+.blue-text-footer {
+    color: #5865f2;
+}
+
+
+/* Inserisco l'ultima parte del footer */
+
+.footer-footer {
+    margin: 0 8%;
+    padding: 10px;
+    border-top: 1px solid #5865f2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-button {
+    margin: 10px 25px;
+    height: 30px;
+    width: auto;
+    padding: 5px 15px;
+    border: solid 1px;
+    border-radius: 25px;
+    font-size: 15px;
+}
