@@ -22,7 +22,7 @@
     <!-- Inserisco il foglio di stile -->
     <link rel="stylesheet" href="css/style.css">
     <title>Discord</title>
-    <link rel="icon" href="img/logo.svg">
+    <link rel="icon" href="img/logo_discord.png">
 </head>
 
 <body>
@@ -32,7 +32,7 @@
         <nav>
             <!-- Inserisco il Logo di Discord -->
             <div id="logo">
-                <i class="fa-brands fa-discord"></i> Discord
+                <img src="img/logo.svg" alt="Logo">
             </div>
 
             <ul class="menu">
@@ -121,7 +121,7 @@
 
             <div class="main-img-col"><img src="img/item4-big.svg" alt=""></div>
 
-            <div class="main-text-col">
+            <div class="main-text-col" id="stars">
                 <h3>Pronto ad iniziare una nuova avventura?</h3>
                 <button class="main-button" id="mac-main"> Scarica per mac</button>
             </div>
@@ -136,7 +136,7 @@
             <section class="first-bloc-footer">
                 <h2 class="blue-text-footer">Il tuo posto per parlare</h2>
                 <div>
-                    <img src="img/ita.png" alt="Bandiera Italia">
+                    <img id="italy" src="img/ita.png" alt="Bandiera Italia">
                     <span>Italiano</span>
                     <span><i class="fa-sharp fa-solid fa-arrow-down"></i></span>
                 </div>
@@ -205,7 +205,10 @@
 
         <!-- Inserisco la parte finale del footer -->
         <div class="footer-footer">
-            <span id="logo"><i class="fa-brands fa-discord"> Discord</i></span>
+            <span id="logo">
+                <img src="img/logo.svg" alt="">
+            </span>
+
             <button class="footer-button" id="mac-main"> Registrati</button>
         </div>
 

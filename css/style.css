@@ -31,7 +31,8 @@ nav {
 }
 
 #logo {
-    font-size: 20px;
+    width: 20px;
+    height: auto;
 
 }
 
@@ -41,6 +42,10 @@ nav {
     display: flex;
     justify-content: space-between;
     flex-basis: 400px;
+}
+
+.menu li:hover{
+    text-decoration: underline;
 }
 
 
@@ -59,6 +64,10 @@ ul a {
     padding: 5px 15px;
     border: solid 1px #5865f2;
     border-radius: 15px;
+}
+
+#nav-button:hover{
+    box-shadow:  5px 5px #5865f2;
 }
 
 
@@ -117,10 +126,18 @@ ul a {
     background-color: white;
 }
 
+#mac:hover{
+    box-shadow:  5px 5px #5865f2;
+}
+
 #browser {
     border-color: black;
     color: white;
     background-color: black;
+}
+
+#browser:hover{
+     box-shadow:  5px 5px grey;
 }
 
 /* Inserisco lo stile del main e delle rispettive section */
@@ -175,16 +192,14 @@ ul a {
 
 /* Inserisco lo stile per la parte finale del main che è a colonne */
 .main-container-col {
-    background-color:  #f3f4f5;
-    padding: 100px 0px;
-    margin-top: 50px;
+    background-color: #f3f4f5;
+    padding: 50px 0px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
-    gap: 50px;
 }
 
 .main-img-col {
@@ -197,10 +212,18 @@ ul a {
     color: black;
     width: 80%;
     font-size: 20px;
+    padding-top: 40px;
+}
+
+#stars{
+    background-image: url(../img/stars.svg);
+    background-position-y:0px ;
+    background-position-x:center ;
+    background-repeat: no-repeat;
 }
 
 .main-text-col h2 {
-    margin-bottom: 20px;
+    margin: 20px 0;
     font-weight: 600;
 }
 
@@ -211,7 +234,7 @@ ul a {
 }
 
 .main-button {
-    margin: 40px 5px;
+    margin: 40px 5px;  
     height: 50px;
     width: auto;
     padding: 5px 15px;
@@ -224,6 +247,10 @@ ul a {
     border-color: #5865f2;
     color: white;
     background-color: #5865f2;
+}
+
+#mac-main:hover{
+    box-shadow:  5px 5px #195eed;
 }
 
 /* Inserisco lo stile del footer */
@@ -290,4 +317,10 @@ footer {
     border: solid 1px;
     border-radius: 25px;
     font-size: 15px;
+}
+
+#italy {
+    width: 20px;
+    height: auto;
+
 }
